@@ -1,0 +1,38 @@
+{
+  "canisters": {
+    "webshop_backend": {
+      "build": "npx azle webshop_backend",
+      "candid": "src/webshop_backend/webshop_backend.did",
+      "gzip": true,
+      "main": "src/webshop_backend/src/index.ts",
+      "tech_stack": {
+        "cdk": {
+          "azle": {}
+        },
+        "language": {
+          "typescript": {}
+        }
+      },
+      "type": "custom",
+      "wasm": ".azle/webshop_backend/webshop_backend.wasm"
+    },
+    "webshop_frontend": {
+      "dependencies": [
+        "webshop_backend"
+      ],
+      "source": [
+        "src/webshop_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "webshop_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}

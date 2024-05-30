@@ -1,0 +1,385 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px; /* Increased padding */
+    background-color: #064420; /* Updated background color */
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+header .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover, header nav ul li a.active {
+    color: #FA8231;
+}
+
+.hero {
+    background: url('baliuagu.jpg') no-repeat center center;
+    background-size: cover; /* Ensure the background covers the entire container */
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #FFD700;
+    color: #fff;
+}
+
+.hero-text {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.hero-text h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.hero-text p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    background-color: #FA8231;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.cta-button:hover {
+    background-color: #F77F00;
+}
+
+main {
+    padding: 20px;
+}
+
+.products {
+    text-align: center;
+    background-color: #E4EFE7;
+    padding: 40px 20px;
+}
+
+.products h2 {
+    margin-bottom: 30px; /* Increased margin for better separation */
+    font-size: 2.5em; /* Slightly larger font size */
+    color: #064420; /* Adjusted font color for better contrast */
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    justify-items: center; /* Center items horizontally */
+}
+
+.product-item {
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex; /* Use flexbox for button alignment */
+    flex-direction: column; /* Align button below text */
+    justify-content: space-between; /* Distribute space evenly */
+}
+
+.product-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.product-item h3 {
+    margin: 15px 0; /* Adjust margin */
+    font-size: 1.4em; /* Adjust font size */
+    color: #333; /* Adjust text color */
+}
+
+.product-item p {
+    margin-bottom: 10px; /* Adjust margin */
+    font-size: 1.1em; /* Adjust font size */
+    font-weight: bold;
+    color: #FA8231; /* Adjust text color */
+}
+.product-item {
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition for smooth effect */
+}
+
+.product-item:hover {
+    transform: translateY(-5px); /* Move the item up slightly on hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add a shadow effect on hover */
+}
+
+.add-to-cart {
+    background-color: #064420;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+    width: 50%;
+    margin-left: auto; /* Set left margin to auto */
+    margin-right: auto; /* Set right margin to auto */
+    display: block; /* Ensure the button is displayed as a block element */
+}
+
+
+.add-to-cart:hover {
+    background-color: #056B35;
+}
+
+
+.add-to-cart {
+    background-color: #064420;
+    color: #fff;
+    padding: 12px 24px; /* Adjust button padding */
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 1em; /* Adjust button font size */
+}
+
+.add-to-cart:hover {
+    background-color: #48524d;
+}
+
+.add-to-cart {
+    background-color: #064420;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* Added transition for hover effect */
+}
+
+.add-to-cart:hover {
+    background-color: #056B35; /* Darker shade on hover */
+}
+
+.add-to-cart {
+    background-color: #064420;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.add-to-cart:hover {
+    background-color: #056B35;
+}
+
+.footer {
+    background-color: #333;
+    color: #064420;
+    padding: 50px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    padding: 20px;
+}
+
+.footer-section h3 {
+    color: #FA8231;
+}
+
+.footer-section p, .footer-section ul {
+    color: #064420;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #064420;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    color: #FA8231;
+}
+
+.social-icons {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Change flex direction to column */
+}
+
+.social-icons li {
+    margin-bottom: 10px; /* Add margin-bottom to create space between icons */
+}
+
+.social-icons a {
+    color: #000; /* Change the color to black */
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #FA8231;
+}
+
+.footer-bottom p {
+    color: #064420;
+    font-size: 14px;
+}
+.social-icons a {
+    font-size: 24px;
+    color: black;
+}
+/* Hamburger icon */
+.menu-toggle {
+    display: none; /* Initially hide on slarger screens */
+}
+
+/* Responsive CSS */
+@media only screen and (max-width: 768px) {
+    header {
+        padding: 20px; /* Reduce padding for smaller screens */
+    }
+    .logo img {
+        width: 40px;
+        height: 40px;
+    }
+    header .logo {
+        font-size: 1.2em;
+    }
+    header nav ul li {
+        margin: 0 8px; /* Reduce margin for smaller screens */
+    }
+    .hero-text h1 {
+        font-size: 2em; /* Adjust font size for smaller screens */
+    }
+    .hero-text p {
+        font-size: 1em; /* Adjust font size for smaller screens */
+    }
+    .cta-button {
+        padding: 8px 16px; /* Adjust button padding for smaller screens */
+    }
+    .products h2 {
+        font-size: 2em;
+    }
+    .product-item h3 {
+        font-size: 1.2em;
+    }
+    .product-item p {
+        font-size: 1em;
+    }
+    .add-to-cart {
+        padding: 8px 16px;
+    }
+    .menu-toggle {
+        display: block; /* Display on small screens */
+        cursor: pointer;
+    }
+    /* Initially hide the menu toggle */
+.menu-toggle {
+    display: none;
+}
+
+/* Position the menu toggle at the rightmost */
+header .menu-toggle {
+    display: block; /* Display on small screens */
+    cursor: pointer;
+    position: absolute;
+    top: 50%; /* Vertically center */
+    right: 20px; /* Align to the right */
+    transform: translateY(-50%); /* Adjust vertical alignment */
+}
+
+    /* Hide regular navigation on small screens */
+    header nav ul {
+        display: none;
+    }
+    /* Show regular navigation when hamburger menu is active */
+    header nav.active ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #064420;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        padding: 20px 0;
+    }
+    header nav.active ul li {
+        margin: 10px 0;
+    }
+    
+}
+
